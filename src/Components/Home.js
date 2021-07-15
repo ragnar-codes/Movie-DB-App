@@ -4,6 +4,7 @@ import React, {useState, useEffect} from "react";
 import {POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL} from '../config';
 //components
 import HeroImage from "./HeroImage";
+import Grid from '../Components/Grid/index'
 
 //Hook
 import {useHomeFetch} from '../Hooks/useHomeFetch'
@@ -22,6 +23,7 @@ const Home = () => {
             text={state.results[0].overview}
         /> 
         ) : null}
+        
         </>
     ) 
 }
