@@ -11,6 +11,7 @@ const initialState = {
 
 
 export const useHomeFetch = () => {
+    const [searchTerm, setSearchTerm] = useState('');
     const [state, setState] = useState(initialState);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
@@ -39,5 +40,5 @@ export const useHomeFetch = () => {
         fetchMovies(1)
     }, [])
 
-    return {state, loading, error};
+    return {state, loading, error, setSearchTerm};
 };
