@@ -1,5 +1,4 @@
 import React from "react";
-import { headerSize } from "tar";
 //Styles
 import { Wrapper, Content } from "./Grid.styles";
 
